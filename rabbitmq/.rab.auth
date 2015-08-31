@@ -1,0 +1,6 @@
+#!/bin/bash
+USERNAME="shuai"
+PASSWORD="123456"
+HOSTNAME="172.16.100.234"
+PORT=15672
+CONF="/etc/zabbix/zabbix_agentd.conf"

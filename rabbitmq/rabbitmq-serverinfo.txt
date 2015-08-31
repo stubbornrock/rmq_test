@@ -1,0 +1,176 @@
+# 数据总览
+{
+u'node': u'rabbit@contrail-ctrl', 
+u'management_version': u'3.2.2',
+u'rabbitmq_version': u'3.2.2',  
+u'erlang_version': u'R16B03',
+u'erlang_full_version': u'Erlang R16B03 (erts-5.10.4) [source] [64-bit] [smp:4:4] [async-threads:30] [hipe] [kernel-poll:true]', 
+
+u'object_totals': {u'connections': 91, 
+                   u'channels': 92, 
+                   u'exchanges': 25
+                   u'queues': 71, 
+                   u'consumers': 185, 
+                  }, 
+u'queue_totals': {u'messages': 0, 
+                  u'messages_details': {u'rate': 0.0}, 
+                  u'messages_ready': 0, 
+                  u'messages_ready_details': {u'rate': 0.0}, 
+                  u'messages_unacknowledged': 0, 
+                  u'messages_unacknowledged_details': {u'rate': 0.0}
+                  },                                   
+u'message_stats': {u'publish': 219720, 
+                   u'publish_details': {u'rate': 0.59999999999999998}, 
+                   
+                   u'ack': 219691, +29
+                   u'ack_details': {u'rate': 0.0}, 
+                   
+                   u'deliver': 219692, +28
+                   u'deliver_details': {u'rate': 0.0},
+
+                   u'deliver_no_ack': 22, 
+                   u'deliver_no_ack_details': {u'rate': 0.0},   
+                         
+                   u'deliver_get': 219717, +3
+                   u'deliver_get_details': {u'rate': 0.0}, 
+                    
+                   u'get_no_ack': 3,  
+                   u'get_no_ack_details': {u'rate': 0.0},                                  
+                                     
+                   u'redeliver': 1
+                   u'redeliver_details': {u'rate': 0.0},                                                                                  
+                   },                                     
+u'exchange_types': [
+                    {u'enabled': True, u'name': u'topic', u'description': u'AMQP topic exchange, as per the AMQP specification'}, 
+                    {u'enabled': True, u'name': u'fanout', u'description': u'AMQP fanout exchange, as per the AMQP specification'}, 
+                    {u'enabled': True, u'name': u'direct', u'description': u'AMQP direct exchange, as per the AMQP specification'}, 
+                    {u'enabled': True, u'name': u'headers', u'description': u'AMQP headers exchange, as per the AMQP specification'}
+                   ],                        
+u'contexts': [
+              {u'node': u'rabbit@contrail-ctrl', u'path': u'/', u'description': u'RabbitMQ Management', u'port': 15672}, 
+              {u'node': u'rabbit@contrail-ctrl', u'path': u'/', u'ignore_in_use': True, u'description': u'Redirect to port 15672', u'port': 55672}
+             ], 
+
+u'listeners': [
+               {u'node': u'rabbit@contrail-ctrl', u'ip_address': u'172.16.100.234', u'protocol': u'amqp', u'port': 5672}
+              ], 
+u'statistics_level': u'fine', 
+u'statistics_db_node': u'rabbit@contrail-ctrl',                   
+}
+
+#节点数据统计
+[
+{
+u'name': u'rabbit@contrail-ctrl', 
+u'running': True, 
+u'type': u'disc', 
+u'uptime': 587628906, 
+u'processors': 4, 
+u'os_pid': u'27142'
+u'statistics_level': u'fine', 
+
+u'mem_used': 63306128, 
+u'mem_alarm': False,
+u'mem_limit': 1607501414,  
+
+u'fd_total': 65535, 
+u'fd_used': 123, 
+
+u'sockets_total': 58889, 
+u'sockets_used': 92, 
+
+u'disk_free': 927719424, 
+u'disk_free_limit': 50000000, 
+u'disk_free_alarm': False, 
+
+u'proc_used': 1096, 
+u'proc_total': 1048576, 
+
+u'run_queue': 0, 
+u'partitions': [], 
+
+u'auth_mechanisms': [
+										{u'enabled': True, u'name': u'AMQPLAIN', u'description': u'QPid AMQPLAIN mechanism'}, 
+										{u'enabled': True, u'name': u'PLAIN', u'description': u'SASL PLAIN authentication mechanism'}, 
+										{u'enabled': False, u'name': u'RABBIT-CR-DEMO', u'description': u'RabbitMQ Demo challenge-response authentication mechanism'}
+										], 
+u'applications': [
+                  {u'version': u'3.2.2', u'name': u'amqp_client', u'description': u'RabbitMQ AMQP Client'}, 
+                  {u'version': u'5.9.7', u'name': u'inets', u'description': u'INETS  CXC 138 49'}, 
+                  {u'version': u'2.16.4', u'name': u'kernel', u'description': u'ERTS  CXC 138 10'}, 
+                  {u'version': u'4.11', u'name': u'mnesia', u'description': u'MNESIA  CXC 138 12'}, 
+                  {u'version': u'2.7.0-rmq3.2.2-git680dba8', u'name': u'mochiweb', u'description': u'MochiMedia Web Server'}, 
+                  {u'version': u'2.2.14', u'name': u'os_mon', u'description': u'CPO  CXC 138 46'}, 
+                  {u'version': u'3.2.2', u'name': u'rabbit', u'description': u'RabbitMQ'}, 
+                  {u'version': u'3.2.2', u'name': u'rabbitmq_management', u'description': u'RabbitMQ Management Console'}, 
+                  {u'version': u'3.2.2', u'name': u'rabbitmq_management_agent', u'description': u'RabbitMQ Management Agent'}, 
+                  {u'version': u'3.2.2', u'name': u'rabbitmq_web_dispatch', u'description': u'RabbitMQ Web Dispatcher'}, 
+                  {u'version': u'2.3.4', u'name': u'sasl', u'description': u'SASL  CXC 138 11'}, 
+                  {u'version': u'1.19.4', u'name': u'stdlib', u'description': u'ERTS  CXC 138 10'}, 
+                  {u'version': u'1.10.3-rmq3.2.2-gite9359c7', u'name': u'webmachine', u'description': u'webmachine'}, 
+                  {u'version': u'1.3.5', u'name': u'xmerl', u'description': u'XML parser'}
+                  ], 
+u'exchange_types': [
+										{u'enabled': True, u'name': u'topic', u'description': u'AMQP topic exchange, as per the AMQP specification'}, 
+										{u'enabled': True, u'name': u'fanout', u'description': u'AMQP fanout exchange, as per the AMQP specification'}, 
+										{u'enabled': True, u'name': u'direct', u'description': u'AMQP direct exchange, as per the AMQP specification'}, 
+										{u'enabled': True, u'name': u'headers', u'description': u'AMQP headers exchange, as per the AMQP specification'}
+										], 
+u'contexts': [
+							{u'path': u'/', u'ignore_in_use': True, u'description': u'Redirect to port 15672', u'port': 55672}, 
+							{u'path': u'/', u'description': u'RabbitMQ Management', u'port': 15672}
+							], 
+}
+]
+
+###Queue数据统计
+{
+u'name': u'aliveness-test', 
+u'status': u'running', 
+u'vhost': u'/', 
+u'node': u'rabbit@contrail-ctrl', 
+
+u'durable': False,
+u'auto_delete': False, 
+
+u'consumers': 0,
+u'exclusive_consumer_tag': u'',  
+u'memory': 13872, 
+u'policy': u'', 
+u'arguments': {},
+u'idle_since': u'2015-08-03 16:53:37', 
+
+u'messages': 0, 
+u'messages_details': {u'rate': 0.0},  
+u'messages_ready': 0,  
+u'messages_ready_details': {u'rate': 0.0}, 
+u'messages_unacknowledged': 0, 
+u'messages_unacknowledged_details': {u'rate': 0.0},
+u'message_stats': {u'publish': 3, 
+                   u'publish_details': {u'rate': 0.0}, 
+                   u'deliver_get': 3,
+                   u'deliver_get_details': {u'rate': 0.0} 
+                   u'get_no_ack': 3, 
+                   u'get_no_ack_details': {u'rate': 0.0}, 
+                   },
+
+u'backing_queue_status': {
+                          u'q1': 0, 
+                          u'q2': 0, 
+                          u'q3': 0, 
+                          u'q4': 0, 
+                          u'len': 0,
+                          u'avg_ack_egress_rate': 0.0, 
+                          u'ram_msg_count': 0, 
+                          u'ram_ack_count': 0, 
+                          u'persistent_count': 0, 
+                          u'target_ram_count': 
+                          u'infinity', 
+                          u'next_seq_id': 3, 
+                          u'delta': [u'delta', u'undefined', 0, u'undefined'], 
+                          u'pending_acks': 0, 
+                          u'avg_ack_ingress_rate': 0.0, 
+                          u'avg_egress_rate': 0.0058236645166706708, 
+                          u'avg_ingress_rate': 0.0058236645166706708
+                          }, 
+}
